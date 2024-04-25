@@ -1,0 +1,42 @@
+[debug] [2024-04-25T17:09:43.289Z] ----------------------------------------------------------------------
+[debug] [2024-04-25T17:09:43.290Z] Command:       C:\Program Files\nodejs\node.exe D:\CEDT\SE Lab\GithubAction\GitHubActionPractice\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-04-25T17:09:43.291Z] CLI Version:   13.7.4
+[debug] [2024-04-25T17:09:43.291Z] Platform:      win32
+[debug] [2024-04-25T17:09:43.291Z] Node Version:  v20.11.1
+[debug] [2024-04-25T17:09:43.291Z] Time:          Fri Apr 26 2024 00:09:43 GMT+0700 (เวลาอินโดจีน)
+[debug] [2024-04-25T17:09:43.291Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-25T17:09:43.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-25T17:09:43.364Z] > authorizing via signed-in user (tewpongamorn@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-04-25T17:09:43.370Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-25T17:09:43.370Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-25T17:09:43.370Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":9999}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-25T17:09:43.373Z] [hub] writing locator at C:\Users\Asus\AppData\Local\Temp\hub-ggwp-ae2f7.json
+[debug] [2024-04-25T17:09:43.385Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwp-ae2f7/sites 
+[debug] [2024-04-25T17:09:46.313Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwp-ae2f7/sites 200
+[debug] [2024-04-25T17:09:46.313Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ggwp-ae2f7/sites {"sites":[{"name":"projects/ggwp-ae2f7/sites/ggwp-ae2f7","defaultUrl":"https://ggwp-ae2f7.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-25T17:09:46.313Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwp-ae2f7/webApps/-/config [none]
+[debug] [2024-04-25T17:09:46.969Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwp-ae2f7/webApps/-/config 200
+[debug] [2024-04-25T17:09:46.969Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwp-ae2f7/webApps/-/config {"projectId":"ggwp-ae2f7","storageBucket":"ggwp-ae2f7.appspot.com","apiKey":"AIzaSyBs46uCWgPYhHgt3uw31AUtOR5xRpoaw4c","authDomain":"ggwp-ae2f7.firebaseapp.com","messagingSenderId":"164709599352"}
+[debug] [2024-04-25T17:09:46.973Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ggwp-ae2f7 [none]
+[debug] [2024-04-25T17:09:47.485Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ggwp-ae2f7 200
+[debug] [2024-04-25T17:09:47.485Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ggwp-ae2f7 {"projectId":"ggwp-ae2f7","projectNumber":"164709599352","displayName":"GGWP","name":"projects/ggwp-ae2f7","resources":{"hostingSite":"ggwp-ae2f7"},"state":"ACTIVE","etag":"1_831d4968-6bd3-41ba-b889-0674a5e2f5ea"}
+[info] i  hosting[ggwp-ae2f7]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[ggwp-ae2f7]: Local server: http://127.0.0.1:9999 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:9999\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:9999 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
